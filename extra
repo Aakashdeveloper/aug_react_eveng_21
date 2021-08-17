@@ -1,0 +1,42 @@
+https://code.visualstudio.com/download
+https://nodejs.org/en/
+https://github.com/
+https://github.com/Aakashdeveloper
+https://github.com/Aakashdeveloper/aug_react_eveng_21
+https://git-scm.com/downloads
+
+vs code extensions
+> vscode-icons
+> tabnine
+> auto close tag
+> git lens
+> git history
+
+>>>>>>>>
+React is frontend library or framework which help to build
+single page application using component base structure
+>>>>>
+
+For data interaction we need backend api that expose JSON data
+
+Open source > anybody can contribute in development
+
+npm > Node Package manager
+
+JSON > JavaScript Object Notation
+[
+    {
+        id:1,
+        name:'John',
+        city:'Delhi'
+    },
+    {
+        id:2,
+        name:'Bhumika',
+        city:'Paris'
+    },
+    {
+        id:3,
+        name:'Keev'
+    }
+]
