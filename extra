@@ -40,3 +40,57 @@ JSON > JavaScript Object Notation
         name:'Keev'
     }
 ]
+
+package.json
+> start point to application
+> script to start,test,build
+> what all packages you are using
+> meta data (about the application> description,version,name)
+
+//// step to generate package.json //// 
+> open the cmd
+> navigate to the folder using cmd
+> npm init 
+> answer all question
+> type "yes"
+
+//// step to install package //// 
+> open the cmd
+> navigate to the folder using cmd
+> npm i packagename
+
+///Step to generate React App////
+#window
+
+>>>>one time step<<<<<
+> open cmd as administrator
+> npm i -g create-react-app
+
+>>>>next every time you need new react app<<<<<
+> open cmd
+> navigate to the folder
+> create-react-app appname
+
+
+## mac/linux
+
+>>>>one time step<<<<<
+> open terminal
+> sudo npm i -g create-react-app
+
+>>>>next every time you need new react app<<<<<
+> open terminal
+> navigate to the folder
+> create-react-app appname
+
+#### office ####
+> open cmd
+> navigate to the folder
+> npx create-react-app appname
+
+
+///Step to run React App////
+> open cmd
+> navigate to the folder
+> npm start
+> localhost:3000
