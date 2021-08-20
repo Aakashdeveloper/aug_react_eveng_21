@@ -117,3 +117,7 @@ function add(a,b){
 
 add(1,2)
 [1,2]
+
+//html
+inline > that start in same line
+block > always start from new line
