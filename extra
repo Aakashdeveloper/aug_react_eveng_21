@@ -121,3 +121,40 @@ add(1,2)
 //html
 inline > that start in same line
 block > always start from new line
+
+
+///
+inline
+styleTags
+stylesheet
+
+h1
+
+inline
+h1{
+    color:red;
+    text-align:center
+}
+
+styletag
+h1{
+    color:orange;
+    font-size:30px;
+}
+
+stylesheet
+h1{
+    font-size:40px;
+    text-align:right;
+    margin-top:1%
+}
+
+
+inline > styletag > stylesheet
+
+h1{
+    color:red;
+    text-align:center;
+    font-size:30px;
+    margin-top:1%
+}
