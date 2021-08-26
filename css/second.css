@@ -1,0 +1,16 @@
+.rowFirst{
+    background-color:rgb(16, 161, 209);
+    height:200px;
+    width:30%;
+    float:left;
+    overflow:scroll;
+    margin:1%;
+    border:1px solid black;
+    color:white
+}
+.slatecolor{
+    background-color:lightslategray
+}
+#purpleColor{
+    background-color:rgb(235, 167, 78)
+}

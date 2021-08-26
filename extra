@@ -158,3 +158,12 @@ h1{
     font-size:30px;
     margin-top:1%
 }
+
+tagName > h1 ,p
+class> . when we have to target multiple element with same property
+id> # when we have to target unique element
+solid
+dotted
+double
+groove
+dashed
