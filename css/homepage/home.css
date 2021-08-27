@@ -10,17 +10,9 @@ body{
     background-size: 100% 500px;
 }
 
-#quicksearch{
-    height:500px;
-    width:100%;
-    border:5px solid red;
-}
-
 #login{
     height:40px;
     margin-left:85%;
-    margin-top:1%;
-    position:absolute;
 }
 
 .loginbutton{
@@ -28,4 +20,117 @@ body{
     font-size:30px;
     text-decoration: none;
 
+}
+#logo{
+    font-size:90px;
+    color:rgb(49, 45, 45);
+    height:150px;
+    width:150px;
+    background-color:white;
+    border-radius:50%;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+#logo > span{
+    font-weight: bold;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+#heading{
+    text-align: center;
+    font-size:40px;
+    margin-top:30px;
+}
+
+#dropdown{
+    height:60px;
+    width:60%;
+    margin-left: 28%;
+    margin-top:3%;
+}
+
+select{
+    height:60px;
+    width:30%;
+    font-size:20px
+}
+
+#hotels{
+    width:50%; 
+}
+
+#quicksearch{
+    height:500px;
+    width:80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#QuickHeading{
+    color:#192f60;
+    font-size:30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: block;
+    font-weight: bold;
+}
+
+#QuickSubHeading{
+    color:gray;
+    font-size:20px;
+    margin-top:20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: block;
+}
+
+.tileContainer{
+    height:200px;
+    width:40%;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 2%;
+    box-shadow: 0px 3px 15px black;
+}
+#mainTileContainer{
+    margin-top:2%;
+    margin-left:10%
+}
+.tileComponent1{
+    width:46%;
+    float: left;
+}
+
+.tileComponent1>img{
+    height:200px;
+    width:100%
+}
+
+.tileComponent2{
+    width:46%;
+    float: left;
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+.componentHeading{
+    color:#192f60;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.componentSubHeading{
+    color:gray;
+    font-size:20px;
+}
+
+#footer #main{
+    display: inline-block
+}
+
+#footer{
+    margin-top: 5%;;
+    text-align: center;
+    font-size:30px
 }
