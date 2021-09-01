@@ -167,3 +167,11 @@ dotted
 double
 groove
 dashed
+
+
+bootstrap3
+
+xs < 768
+sm > 768
+md > 992
+lg > 1200

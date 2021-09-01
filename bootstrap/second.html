@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="first.css" rel="stylesheet"></link>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#developerNav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Developer Funnel</a>
+                    </div> 
+                    <div class="navbar-collapse collapse" id="developerNav">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a>
+                            </li>
+                        </ul> 
+                    </div>
+                    
+                </div>  
+            
+            </nav>
+            <hr/>
+                <span class="glyphicon glyphicon-print"></span>
+                <span class="glyphicon glyphicon-trash" style="font-size:20px;color:red"></span>
+                <span class="glyphicon glyphicon-edit"></span>
+                <span class="glyphicon glyphicon-refresh"></span>
+                <span class="glyphicon glyphicon-glass" style="font-size:20px;color:rgb(116, 192, 236)"></span>
+            <hr/>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details">
+                Details
+            </button>
+
+            <div id="details" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;
+                            </button>
+                            <h4 class="modal-title">Student Details</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>This is about students</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">
+                               Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hotels" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#hotels" data-slide-to="0" class="active"></li>
+                    <li data-target="#hotels" data-slide-to="1"></li>
+                    <li data-target="#hotels" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="nightlife.png" style="height:400px;width:100%;"/>
+                    </div>
+                    <div class="item">
+                        <img src="snacks.png" style="height:400px;width:100%;"/>
+                    </div>
+                    <div class="item">
+                        <img src="holiday.png" style="height:400px;width:100%;"/>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#hotels" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#hotels" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <hr/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4>Employee</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input class="form-control" id="fname"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input class="form-control" id="lname"/>
+                    </div>
+                    <button class="btn btn-success">
+                        Submit
+                    </button>
+                    
+                </div>
+            </div>
+            <hr/>
+            <span class="label label-primary" style="font-size:20px;">
+                <span class="fa fa-wifi" style="font-size:20px;color:red"></span> Wifi
+            </span>
+            <span class="label label-info" style="font-size:20px;">
+                <span class="glyphicon glyphicon-glass" style="font-size:20px;color:rgb(1, 41, 65)"></span> Drinks
+            </span>
+            <span class="label label-warning" style="font-size:20px;">
+                <span class="fa fa-swimming-pool"></span>Pool</span>
+            <hr/>
+            <div class="media">
+                <div class="media-left">
+                    <img src="nightlife.png" class="media-object" style="width:150px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">NightLife</h4>
+                    <p>
+                        NightLife is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with>>>>>
+                
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-body">
+                    <h4 class="media-heading">Holidays</h4>
+                    <p>
+                        Holidays is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with>>>>>
+                
+                    </p>
+                </div>
+                <div class="media-right">
+                    <img src="holiday.png" class="media-object" style="width:150px">
+                </div>
+            </div>
+
+            <!--
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Developer Funnel</a>
+                        </div> 
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul> 
+                    </div>  
+                
+                </nav>
+            -->
+        </div>
+    </body>
+</html>
