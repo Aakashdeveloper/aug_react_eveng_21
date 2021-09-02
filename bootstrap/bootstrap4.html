@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .border{
+                height:100px;
+                width:100px;
+                display: inline-block;
+                margin: 1%;
+            }
+            .card{
+              display: inline-block;
+              margin:2%
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">Developer Funnel</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                data-target="#developerNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="developerNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                    </ul> 
+                </div>  
+            </nav>
+            <span class="text-muted">This Bs4</span>
+            <span class="text-primary">This Bs4</span>
+            <span class="text-secondary">This Bs4</span>
+            <span class="text-success">This Bs4</span>
+            <span class="text-warning">This Bs4</span>
+            <span class="text-danger">This Bs4</span>
+            <span class="text-info">This Bs4</span>
+            <span class="text-dark">This Bs4</span>
+            <span class="text-light">This Bs4</span>
+            <hr/>
+            <span class="bg-success text-light">This Bs4</span>
+            <span class="bg-primary text-light">This Bs4</span>
+            <span class="bg-secondary text-light">This Bs4</span>
+            <span class="bg-dark text-light">This Bs4</span>
+            <span class="bg-warning text-light">This Bs4</span>
+            <span class="bg-danger text-light">This Bs4</span>
+            <span class="bg-info text-light">This Bs4</span>
+            <hr/>
+            <button class="btn btn-primary">Click</button>
+            <button class="btn btn-secondary">Save</button>
+            <button class="btn btn-dark">Click</button>
+            <button class="btn btn-warning">Click</button>
+            <button class="btn btn-light">Click</button>
+            <button class="btn btn-info">Click</button>
+            <button class="btn btn-danger">Click</button>
+            <hr/>
+            <img src="nightlife.png" class="img-fluid"/>
+            <hr/>
+            <div id="hotels" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#hotels" data-slide-to="0" class="active"></li>
+                    <li data-target="#hotels" data-slide-to="1"></li>
+                    <li data-target="#hotels" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="nightlife.png" style="height:400px;width:100%;"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="snacks.png" style="height:400px;width:100%;"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="holiday.png" style="height:400px;width:100%;"/>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#hotels" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#hotels" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <hr/>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="nightlife.png"/>
+                <div class="card-body">
+                    <h4 class="card-title">Spanish</h4>
+                    <p class="card-text">Food From Spain</p>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="snacks.png"/>
+                <div class="card-body">
+                    <h4 class="card-title">Spanish</h4>
+                    <p class="card-text">Food From Spain</p>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="nightlife.png"/>
+                <div class="card-body">
+                    <h4 class="card-title">Spanish</h4>
+                    <p class="card-text">Food From Spain</p>
+                </div>
+            </div>
+
+            <div class="card" style="width:100%">
+                <img class="card-img-top" src="nightlife.png"/>
+                <div class="card-body">
+                    <h4 class="card-title">Spanish</h4>
+                    <p class="card-text">Food From Spain</p>
+                </div>
+            </div>
+            
+            <hr/>
+            <button class="btn btn-outline-primary">Click</button>
+            <button class="btn btn-outline-secondary">Save</button>
+            <button class="btn btn-outline-dark">Click</button>
+            <button class="btn btn-outline-warning">Click</button>
+            <button class="btn btn-outline-light">Click</button>
+            <button class="btn btn-outline-info">Click</button>
+            <button class="btn btn-outline-danger">Click</button>
+            <hr/>
+            <span class="border border-primary"></span>
+            <span class="border border-success"></span>
+            <span class="border border-warning"></span>
+            <span class="border border-danger"></span>
+            <span class="border border-info"></span>
+            <span class="border border-light"></span>
+            <span class="border border-dark"></span>
+        </div>
+    </body>
+</html>
