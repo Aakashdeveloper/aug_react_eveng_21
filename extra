@@ -190,3 +190,30 @@ md >768
 lg >992
 xl >1200
 xxl>1400
+
+///////////
+functional
+> Dumb Components
+> Use to display or render
+> it cannot maintain state
+
+class
+> Logical Component
+> we can maintain state 
+> we use to interact with data/ apicall / event as well as display
+> Any data intercation should happen through state only
+
+
+hooks
+
+///////////
+state
+> act like local variables
+> Any data interaction should happen through state only
+> Scope of state will be inside one component
+> mutable we can update the value of state
+
+props
+> props help to transfer data from one component to other
+> immutable we cannot update the value of props
+> it can only transfer data between nested component
