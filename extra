@@ -217,3 +217,9 @@ props
 > props help to transfer data from one component to other
 > immutable we cannot update the value of props
 > it can only transfer data between nested component
+
+
+// JavaScript
+map
+Filter
+indexOf
