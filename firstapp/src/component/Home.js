@@ -9,16 +9,21 @@ class HomePage extends Component {
         super()
 
         this.state={
-            products:JSON
+            products:JSON,
+            filtered:JSON
         }
+    }
+
+    filterProduct = (data) => {
+        console.log(data)
     }
 
     render(){
         // console.log(JSON)
         return(
             <>
-                <Header/>
-                <Product prodData={this.state.products}/>
+                <Header userText={(userInput) => {this.filterProduct(userInput)}}/>
+                <Product prodData={this.state.filtered}/>
                 <Footer year="2021" month="Sep"/>
             </>
         )

@@ -223,3 +223,39 @@ props
 map
 Filter
 indexOf
+
+var a = [1,2,3,4]
+a.map((data) =>  {console.log(data)})
+
+a.map((data) =>  {console.log(data*2)})
+
+a.map((data) =>  {return data*2})
+[2, 4, 6, 8]
+
+
+var a = [1,2,3,4,8,5,7,3,9,1,5]
+a.filter((data) => {return data>4})
+[8, 5, 7, 9, 5]
+
+var city = ["Delhi","Mumbai","Pune","London"]
+undefined
+city.indexOf('Delhi')
+0
+city.indexOf('Pune')
+2
+city.indexOf('Amsterdam')
+-1
+city.indexOf('Helsinki')
+-1
+
+parent => child (props)
+child => parent (props with function)
+
+
+//parent
+function add(a,b){
+    return a+b
+}
+
+// child
+add(1,2)

@@ -4,11 +4,11 @@
         "brand":"3M",
         "discount":"Less than 10%",
         "form": "Mask",
-        "use":"Respiratory Care",
+        "uses":"Respiratory Care",
         "name":"3M 9004IN Particle Respirator Mask",
         "image":"https://i.ibb.co/8BJhgK2/r6xkegcloxgn5eq8owwg.jpg",
         "description":"box of 10 masks",
-        "cost":230
+        "cost":200
     },
     {
         "id":2,

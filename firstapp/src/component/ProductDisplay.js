@@ -3,27 +3,24 @@ import './Product.css';
 
 const Product = (props) => {
     console.log(">>>inside product",props)
+
+    const renderProduct = props.prodData.map((data) => {
+        return(
+            <div className="d-flex border p-3" key={data.id}>
+                <img src={data.image}className="flex-shrink-0 me-3 mt-3"/>
+                <div>
+                    <h4>{data.name}</h4>
+                    <h5>{data.uses}</h5>
+                    <p>{data.description}</p>
+                    <p>Rs.{data.cost}</p>
+                </div>
+            </div>
+        )
+    })
     return(
         <>
-            <div class="container mt-3">
-            <div class="d-flex border p-3">
-                <img src="https://i.ibb.co/8BJhgK2/r6xkegcloxgn5eq8owwg.jpg"
-                    class="flex-shrink-0 me-3 mt-3 rounded-circle"/>
-                <div>
-                    <h4>John Doe <small>Posted on February 19, 2016</small></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="d-flex border p-3">
-                <img src="https://i.ibb.co/fHQ8JY4/kclatp7d9dt0dwgu4zkq.jpg"
-                    class="flex-shrink-0 me-3 mt-3 rounded-circle"/>
-                <div>
-                    <h4>John Doe <small>Posted on February 19, 2016</small></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.</p>
-                </div>
-            </div>
+            <div className="container mt-3">
+                {renderProduct}
             </div>
         </>
     )
