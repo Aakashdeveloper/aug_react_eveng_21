@@ -14,8 +14,17 @@ class HomePage extends Component {
         }
     }
 
-    filterProduct = (data) => {
-        console.log(data)
+    /*
+    var a = [1,2,3,4,8,5,7,3,9,1,5]
+    a.filter((data) => {return data>4})
+    */
+
+    filterProduct = (userData) => {
+        console.log(userData);
+        const output = this.state.products.filter((data) => {
+            return ((data.name.toLowerCase().indexOf(userData.toLowerCase())>-1) || (data.description.toLowerCase().indexOf(userData.toLowerCase())>-1));
+        })
+        this.setState({filtered:output})
     }
 
     render(){
