@@ -259,3 +259,37 @@ function add(a,b){
 
 // child
 add(1,2)
+
+params 
+> complusory
+> we need to define in routing first
+> go after /
+
+queryParams
+> optional
+> no need to define in routing
+> go after ?
+
+// default props
+history > use for the redirection
+location > for the query params
+match > for params
+** in child component we will not get the default props
+
+
+var a = "?page=1"
+undefined
+a.split('=')
+(2) ['?page', '1']
+a.split('=')[1]
+'1'
+
+var a = "?page=1&category=mobile"
+var b = a.split('&')
+b
+(2) ['?page=1', 'category=mobile']
+
+b[0].split('=')[1]
+'1'
+b[1].split('=')[1]
+'mobile'
