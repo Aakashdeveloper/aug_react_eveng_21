@@ -332,3 +332,13 @@ https://developerpayment.herokuapp.com/paynow
 (Header) => {'x-access-token':'token value from login'}
 
 https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
+
+
+///// string literal//////
+var a = 10
+var b = "My age is "+a;
+//es5
+"My age is 10"
+
+var c = `My age is ${a}`
+"My age is 10"
