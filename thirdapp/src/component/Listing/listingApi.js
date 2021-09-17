@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import ListingDisplay from './listingDisplay';
 
+const url = "https://developerfunnel.herokuapp.com/hotellist"
 class Listing extends Component {
     constructor(props){
         super(props)
@@ -17,10 +19,17 @@ class Listing extends Component {
                     Filter Here
                 </div>
                 <div className="col-md-10">
-                    Content Here
+                    <ListingDisplay listdata={this.state.hotellist}/>
                 </div>
             </div>
         )
+    }
+
+    // call api using axios 
+    componentDidMount(){
+        let tripid = this.props.match.params.id;
+        axios.get(`${url}/${tripid}`)
+        .then((res) =>  {this.setState({hotellist: res.data})})
     }
 }
 

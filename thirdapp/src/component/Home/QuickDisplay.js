@@ -7,7 +7,7 @@ const QuickDisplay = (props) => {
         if(tripdata){
             return tripdata.map((item) => {
                 return(
-                    <Link to={`/list/${item._id}`}>
+                    <Link to={`/list/${item._id}`} key={item._id}>
                         <div className="tileContainer">
                             <div className="tileComponent1">
                                 <img src={item.image}/>
