@@ -11,7 +11,8 @@ class Details extends Component {
 
         this.state={
             details:'',
-            rooms:[{},{},{}]
+            rooms:[{},{},{}],
+            tripId: sessionStorage.getItem('tripid')?sessionStorage.getItem('tripid'):1
         }
     }
     render(){
@@ -77,8 +78,8 @@ class Details extends Component {
                                 </h4>
                             </TabPanel>
                         </Tabs>
-                        <Link to={`/list/1`} className="btn btn-danger">Back</Link> &nbsp;
-                        <Link to="/" className="btn btn-success">Proceed</Link>
+                        <Link to={`/list/${this.state.tripId}`} className="btn btn-danger">Back</Link> &nbsp;
+                        <Link to={`/booking/${details.name}`} className="btn btn-success">Proceed</Link>
                     </div>
                 </div>
             </div>
@@ -89,7 +90,8 @@ class Details extends Component {
     async componentDidMount(){
         let hotelid = this.props.match.params.id;
         let response = await axios.get(`${url}/${hotelid}`)
-        this.setState({details: response.data[0],rooms:response.data[0].type})
+        this.setState({details: response.data[0],rooms:response.data[0].type});
+        sessionStorage.setItem('cost', response.data[0].cost)
     }
 }
 

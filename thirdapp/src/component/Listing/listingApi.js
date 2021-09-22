@@ -28,6 +28,7 @@ class Listing extends Component {
     // call api using axios 
     componentDidMount(){
         let tripid = this.props.match.params.id;
+        sessionStorage.setItem('tripid', tripid);
         axios.get(`${url}/${tripid}`)
         .then((res) =>  {this.setState({hotellist: res.data})})
     }
