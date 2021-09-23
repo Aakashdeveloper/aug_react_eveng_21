@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+const url = "http://localhost:7601/placeBooking";
 class PlaceBooking extends Component{
     constructor(props){
         super(props)
@@ -7,11 +8,29 @@ class PlaceBooking extends Component{
         this.state={
             id:Math.floor(Math.random()*100000),
             hotel_name:this.props.match.params.hotel_name,
-            name:'',
-            phone:'',
-            email:'',
+            name:'Aakash',
+            phone:'534436546',
+            email:'aakash@gmail.com',
             cost:sessionStorage.getItem('cost')
         }
+    }
+
+    handleChange = (event) => {
+        this.setState({[event.target.name]:event.target.value})
+    }
+
+    handleSubmit = () => {
+        console.log(this.state)
+        fetch(url,
+            {
+                method: 'POST',
+                headers: {
+                    'accept':'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(this.state)
+            })
+            .then(this.props.history.push('/viewBooking'))
     }
     render(){
         return(
@@ -39,18 +58,21 @@ class PlaceBooking extends Component{
                         <div className="form-group">
                             <label>Name</label>
                             <input className="form-control" name="name"
-                            value={this.state.name}/>
+                            value={this.state.name} onChange={this.handleChange}/>
                         </div>
                         <div className="form-group">
                             <label>Email</label>
                             <input className="form-control" name="email"
-                            value={this.state.email}/>
+                            value={this.state.email} onChange={this.handleChange}/>
                         </div>
                         <div className="form-group">
                             <label>Phone</label>
                             <input className="form-control" name="phone"
-                            value={this.state.phone}/>
+                            value={this.state.phone} onChange={this.handleChange}/>
                         </div>
+                        <button className="btn btn-success" onClick={this.handleSubmit}>
+                            Pay Now
+                        </button>
                     </div>
                 </div>
             </div>

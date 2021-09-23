@@ -1,8 +1,28 @@
 {
-    "placeBooking":[
-        {
-            "id":1,
-            "hotel_name":"Test Hotel"
-        }
-    ]
+  "placeBooking": [
+    {
+      "id": 9582,
+      "hotel_name": "The Anantmaya Resort",
+      "name": "Aakash",
+      "phone": "534436546",
+      "email": "aakash@gmail.com",
+      "cost": "4126"
+    },
+    {
+      "id": 12096,
+      "hotel_name": "Hotel Sapphire",
+      "name": "Aakash",
+      "phone": "534436546",
+      "email": "aakash@gmail.com",
+      "cost": "4924"
+    },
+    {
+      "id": 86026,
+      "hotel_name": "Rodas - An Ecotel Hotel",
+      "name": "Aakash",
+      "phone": "534436546",
+      "email": "aakash@gmail.com",
+      "cost": "4254"
+    }
+  ]
 }

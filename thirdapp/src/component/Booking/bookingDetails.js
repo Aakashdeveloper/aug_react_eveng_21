@@ -10,7 +10,7 @@ const BookingDisplay = (props) => {
                         <td>{item.hotel_name}</td>
                         <td>{item.name}</td>
                         <td>{item.phone}</td>
-                        <td>{item.cost}</td>
+                        <td>Rs. {item.cost}</td>
                         <td>{item.date}</td>
                         <td>{item.status}</td>
                         <td>{item.bank}</td>

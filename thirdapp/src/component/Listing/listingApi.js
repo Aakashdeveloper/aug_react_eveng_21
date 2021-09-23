@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import ListingDisplay from './listingDisplay';
+import RoomFilter from '../filters/roomFilter'
 
 const url = "https://developerfunnel.herokuapp.com/hotellist"
 class Listing extends Component {
@@ -12,11 +13,14 @@ class Listing extends Component {
         }
     }
 
+    setDataAsPerFilter=(sortedData)=>{
+        this.setState({hotellist:sortedData})
+    }
     render(){
         return(
             <div className="row">
                 <div className="col-md-2">
-                    Filter Here
+                    <RoomFilter roomPerType={(data) => {this.setDataAsPerFilter(data)}}/>
                 </div>
                 <div className="col-md-10">
                     <ListingDisplay listdata={this.state.hotellist}/>
