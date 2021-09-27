@@ -30,7 +30,7 @@ class PlaceBooking extends Component{
                 },
                 body: JSON.stringify(this.state)
             })
-            .then(this.props.history.push('/viewBooking'))
+            .then(console.log("Going to payment gateway"))
     }
     render(){
         return(
@@ -40,6 +40,7 @@ class PlaceBooking extends Component{
                         Place Booking
                     </div>
                     <div className="panel-body">
+                        <form method="POST" action="https://developerpayment.herokuapp.com/paynow">
                         <div className="form-group">
                             <label>Order Id</label>
                             <input className="form-control" readOnly name="id"
@@ -70,9 +71,11 @@ class PlaceBooking extends Component{
                             <input className="form-control" name="phone"
                             value={this.state.phone} onChange={this.handleChange}/>
                         </div>
-                        <button className="btn btn-success" onClick={this.handleSubmit}>
+                        <button className="btn btn-success" onClick={this.handleSubmit}
+                        type="submit">
                             Pay Now
                         </button>
+                        </form>
                     </div>
                 </div>
             </div>

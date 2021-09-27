@@ -25,6 +25,7 @@ Depolyment
 -> Nginx
 React-JWT(Login Logout)-2
 
+
 React_hooks -1
 React-GraphQL-1
 HOC
@@ -377,3 +378,22 @@ npm i -g json-server
 
 json-server --watch booking.json --port 7601
 
+
+var data = "status=TXN_SUCCESS&ORDERID=TEST_41874&date=2021-09-27%2019:28:24.0&bank=ICICI%20Bank"
+undefined
+data.split('&')
+(4) ['status=TXN_SUCCESS', 'ORDERID=TEST_41874', 'date=2021-09-27%2019:28:24.0', 'bank=ICICI%20Bank']
+var myarray = data.split('&')
+
+myarray[0].split('=')[1]
+'TXN_SUCCESS'
+myarray[1].split('=')[1]
+'TEST_41874'
+myarray[2].split('=')[1]
+'2021-09-27%2019:28:24.0'
+myarray[3].split('=')[1]
+'ICICI%20Bank'
+myarray[1].split('=')[1].split('_')
+(2) ['TEST', '41874']
+myarray[1].split('=')[1].split('_')[1]
+'41874'

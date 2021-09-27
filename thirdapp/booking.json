@@ -1,28 +1,26 @@
 {
   "placeBooking": [
     {
-      "id": 9582,
-      "hotel_name": "The Anantmaya Resort",
+      "id": 41874,
+      "hotel_name": "Snow Bliss",
       "name": "Aakash",
       "phone": "534436546",
       "email": "aakash@gmail.com",
-      "cost": "4126"
+      "cost": "2704",
+      "status": "TXN_SUCCESS",
+      "date": "2021-09-27%2019:28:24.0",
+      "bank": "ICICI%20Bank"
     },
     {
-      "id": 12096,
-      "hotel_name": "Hotel Sapphire",
+      "id": 85023,
+      "hotel_name": "Hometel Chandigarh",
       "name": "Aakash",
       "phone": "534436546",
       "email": "aakash@gmail.com",
-      "cost": "4924"
-    },
-    {
-      "id": 86026,
-      "hotel_name": "Rodas - An Ecotel Hotel",
-      "name": "Aakash",
-      "phone": "534436546",
-      "email": "aakash@gmail.com",
-      "cost": "4254"
+      "cost": "2419",
+      "status": "TXN_SUCCESS",
+      "date": "2021-09-27%2019:39:29.0",
+      "bank": "Bank%20of%20Baroda"
     }
   ]
 }
