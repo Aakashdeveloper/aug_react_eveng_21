@@ -20,9 +20,12 @@ Github
 Depolyment
 -> MERN
 -> heroku
+
+///////////////
 -> Aws
 -> Docker
 -> Nginx
+
 React-JWT(Login Logout)-2
 
 
@@ -397,3 +400,6 @@ myarray[1].split('=')[1].split('_')
 (2) ['TEST', '41874']
 myarray[1].split('=')[1].split('_')[1]
 '41874'
+
+///////
+npm run build
