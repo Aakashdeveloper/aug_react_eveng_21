@@ -17,15 +17,13 @@ React = 3
 Mock API
 json-server
 Github
-Depolyment
+Deployment
 -> MERN
 -> heroku
-
-///////////////
 -> Aws
 -> Docker
 -> Nginx
-
+///////////////
 React-JWT(Login Logout)-2
 
 
@@ -352,7 +350,7 @@ https://developerpayment.herokuapp.com/paynow
 
 /******Register*****/
 (POST)> https://developerjwt.herokuapp.com/api/auth/register
-(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","role?":"user"}
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","phone":343432,role?":"user"}
 
 
 /******Login*****/
