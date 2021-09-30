@@ -7,6 +7,8 @@ import Listing from './component/Listing/listingApi';
 import Details from './component/details/detail';
 import PlaceBooking from './component/Booking/placeBooking';
 import BookingApi from './component/Booking/bookingApi';
+import LoginComponent from './component/login/login';
+import RegisterComponent from './component/login/Register';
 
 const Routing = () => {
     return(
@@ -17,6 +19,8 @@ const Routing = () => {
             <Route path="/details/:id" component={Details}/>
             <Route path="/booking/:hotel_name" component={PlaceBooking}/>
             <Route path="/viewBooking" component={BookingApi}/>
+            <Route path="/login" component={LoginComponent}/>
+            <Route path="/signup" component={RegisterComponent}/>
             <Footer/>
         </BrowserRouter>
     )
