@@ -1,9 +1,35 @@
 import React,{Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 
+const url = "https://developerjwt.herokuapp.com/api/auth/userinfo"
 class Header extends Component {
 
+    constructor(props){
+        super(props)
+
+        this.state={
+            userdata:''
+        }
+    }
+
+    handleLogout = () => {
+        this.setState({userdata:''})
+        sessionStorage.removeItem('ltk')
+        sessionStorage.removeItem('userdata')
+        this.props.history.push('/')
+    }
     conditionalHeader = () => {
+        if(this.state.userdata.name){
+            let data = this.state.userdata;
+            let outputarry = [data.name,data.email,data.phone,data.role]
+            sessionStorage.setItem('userData',outputarry)
+            return(
+                <>
+                    <li><Link>{this.state.userdata.name}</Link></li>
+                    <li><button onClick={this.handleLogout}>LogOut</button></li>
+                </>
+            )
+        }
         return(
             <>
                 <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
@@ -37,6 +63,22 @@ class Header extends Component {
             </div>
         )
     }
+
+
+    componentDidMount(){
+        fetch(url,{
+            method: 'GET',
+            headers:{
+                'x-access-token':sessionStorage.getItem('ltk')
+            }
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({
+                userdata:data
+            })
+        })
+    }
 }
 
-export default Header;
+export default withRouter(Header);

@@ -12,7 +12,7 @@ import RegisterComponent from './component/login/Register';
 
 const Routing = () => {
     return(
-        <BrowserRouter>
+        <BrowserRouter forceRefresh={true}>
             <Header/>
             <Route exact path="/" component={Home}/>
             <Route path="/list/:id" component={Listing}/>
