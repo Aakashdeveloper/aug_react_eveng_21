@@ -1,26 +1,48 @@
 {
   "placeBooking": [
     {
-      "id": 41874,
-      "hotel_name": "Snow Bliss",
-      "name": "Aakash",
-      "phone": "534436546",
-      "email": "aakash@gmail.com",
-      "cost": "2704",
+      "id": 5834,
+      "hotel_name": "The Corinthians Resort",
+      "name": "Bhumika",
+      "phone": "88876776676",
+      "email": "bhumika@gmail.com",
+      "cost": "4924",
       "status": "TXN_SUCCESS",
-      "date": "2021-09-27%2019:28:24.0",
+      "date": "2021-10-04%2019:21:59.0",
+      "bank": "State%20Bank%20of%20India"
+    },
+    {
+      "id": 67723,
+      "hotel_name": "JW Marriott Chandigarh",
+      "name": "Bhumika",
+      "phone": "88876776676",
+      "email": "bhumika@gmail.com",
+      "cost": "6599",
+      "status": "TXN_SUCCESS",
+      "date": "2021-10-04%2019:22:45.0",
+      "bank": "Bharat%20Bank"
+    },
+    {
+      "id": 13854,
+      "hotel_name": "Vivaan - The Sun Rise",
+      "name": "Nikita",
+      "phone": "9876543210",
+      "email": "nikita@gmail.com",
+      "cost": "3134",
+      "status": "TXN_SUCCESS",
+      "date": "2021-10-04%2019:23:23.0",
       "bank": "ICICI%20Bank"
     },
     {
-      "id": 85023,
-      "hotel_name": "Hometel Chandigarh",
-      "name": "Aakash",
-      "phone": "534436546",
-      "email": "aakash@gmail.com",
-      "cost": "2419",
+      "id": 89727,
+      "hotel_name": "The Ashtan Sarovar Portico",
+      "name": "Nikita",
+      "phone": "9876543210",
+      "email": "nikita@gmail.com",
+      "cost": "8399",
       "status": "TXN_SUCCESS",
-      "date": "2021-09-27%2019:39:29.0",
-      "bank": "Bank%20of%20Baroda"
+      "date": "2021-10-04%2019:30:40.0",
+      "bank": "Bharat%20Bank"
     }
   ]
 }

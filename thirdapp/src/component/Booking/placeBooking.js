@@ -34,6 +34,13 @@ class PlaceBooking extends Component{
     }
     render(){
         console.log(sessionStorage.getItem('userData'))
+        if(!sessionStorage.getItem('userData')){
+            return(
+                <div>
+                    <h1>Login First To Place Booking</h1>
+                </div>
+            )
+        }
         return(
             <div className="container">
                 <div className="panel panel-info">

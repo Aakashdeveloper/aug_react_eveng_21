@@ -10,6 +10,7 @@ const BookingDisplay = (props) => {
                         <td>{item.hotel_name}</td>
                         <td>{item.name}</td>
                         <td>{item.phone}</td>
+                        <td>{item.email}</td>
                         <td>Rs. {item.cost}</td>
                         <td>{item.date}</td>
                         <td>{item.status}</td>
@@ -29,6 +30,7 @@ const BookingDisplay = (props) => {
                         <th>Hotel</th>
                         <th>Name</th>
                         <th>Phone</th>
+                        <th>Email</th>
                         <th>Cost</th>
                         <th>Date</th>
                         <th>Status</th>
