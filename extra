@@ -25,9 +25,9 @@ Deployment
 -> Nginx
 React-JWT(Login Logout)-2
 React_hooks -1
-///////////////
-
 React-GraphQL-1
+
+///////////////
 HOC
 Basic React Native=1
 React-Redux =1
@@ -400,3 +400,21 @@ myarray[1].split('=')[1].split('_')[1]
 
 ///////
 npm run build
+
+
+npm i apollo-boost apollo-graphql graphql-tag react-apollo
+
+//////////
+setup react native
+////////////////////////////////
+
+npm i -g create-react-native-app
+create-react-native-app appname
+
+
+
+function HOC(component,data){
+    return 'put data inside component
+}
+
+add(1,2)
