@@ -28,9 +28,8 @@ React_hooks -1
 React-GraphQL-1
 HOC
 Basic React Native=1
-///////////////
-
 React-Redux =1
+//////////////
 React-Redux =1
 
 ///////Walkthrough///////
@@ -418,3 +417,10 @@ function HOC(component,data){
 }
 
 add(1,2)
+
+
+///
+npm i redux react-redux react-router-dom react-slick redux-promise
+
+///Testing///
+npm i enzyme enzyme-adapter-react-16 react-addons-test-utils react-test-renderer
